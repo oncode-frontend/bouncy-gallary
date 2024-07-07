@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallary {
+    min-height: 100vh;
+    display: flex;
+    grid-auto-flow: row dense;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallary .picture {
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.picture {
+    width: 200px;
+}
