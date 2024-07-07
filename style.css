@@ -12,8 +12,8 @@ body {
 
 .gallary {
     min-height: 100vh;
-    display: flex;
-    grid-auto-flow: row dense;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: center;
     align-items: center;
 }
@@ -25,4 +25,24 @@ body {
 
 .picture {
     width: 200px;
+    height: 300px;
+    transition: 0.5s;
+    object-fit: cover;
+
 }
+
+.selected {
+    width: 250px !important;
+}
+
+.gelatine {
+    animation: bouncy .5s;
+  }
+  @keyframes bouncy {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(1, 1.1); }
+    50% { transform: scale(1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
+
+  
