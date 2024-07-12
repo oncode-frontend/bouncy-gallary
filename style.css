@@ -30,11 +30,12 @@ body {
     height: 300px;
     transition: 0.5s;
     object-fit: cover;
-
+    filter: grayscale(1);
 }
 
 .selected {
     width: 250px !important;
+    filter: grayscale(0);
 }
 
 .bouncy {
