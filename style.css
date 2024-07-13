@@ -1,7 +1,7 @@
 body {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -20,16 +20,13 @@ body {
     align-items: center;
 }
 
-.gallary .picture {
-    margin: 0 10px;
-    border-radius: 10px;
-}
-
 .picture {
     width: 200px;
     height: 300px;
-    transition: 0.5s;
+    margin: 0 10px;
+    border-radius: 20px;
     object-fit: cover;
+    transition: 0.5s;
     filter: grayscale(1);
 }
 
@@ -39,13 +36,12 @@ body {
 }
 
 .bouncy {
-    animation: bouncy .5s;
-  }
-  @keyframes bouncy {
-    from, to { transform: scale(1, 1); }
-    25% { transform: scale(1, 1.1); }
-    50% { transform: scale(1, 0.9); }
-    75% { transform: scale(0.95, 1.05); }
-  }
+    animation: bouncy 0.5s;
+}
 
-  
+@keyframes bouncy {
+    from, to {transform: scale(1,1);}
+    25% {transform: scale(1,1.1);}
+    50% {transform: scale(1,0.9);}
+    75% {transform: scale(0.95,1.05);}
+}

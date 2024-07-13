@@ -1,4 +1,4 @@
-const pictures = document.querySelectorAll('.picture')
+const pictures = document.querySelectorAll('.picture');
 
 
 pictures.forEach(picture => {
